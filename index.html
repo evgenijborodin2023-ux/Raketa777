@@ -1,0 +1,205 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Малышкина Д.О. - Энциклопедия ракет</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0a0f1e 0%, #1a2639 100%);
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            text-align: center;
+            padding: 50px 0;
+            background: linear-gradient(45deg, #2a3f5e, #0f1a2b);
+            border-radius: 0 0 50px 50px;
+            margin-bottom: 40px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            border-bottom: 3px solid #ff6b00;
+        }
+        
+        h1 {
+            font-size: 3em;
+            color: #ff6b00;
+            text-shadow: 0 0 20px rgba(255, 107, 0, 0.5);
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            font-size: 1.3em;
+            color: #8ab4f8;
+        }
+        
+        .author-info {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 40px;
+            border: 1px solid #ff6b00;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        
+        .info-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .info-item span:first-child {
+            color: #ff6b00;
+            font-weight: bold;
+        }
+        
+        .gallery-title {
+            font-size: 2.2em;
+            color: #fff;
+            margin-bottom: 30px;
+            padding-left: 15px;
+            border-left: 5px solid #ff6b00;
+        }
+        
+        .rocket-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+        
+        .card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(5px);
+            border-radius: 20px;
+            padding: 25px;
+            border: 1px solid #ff6b00;
+            transition: transform 0.3s;
+        }
+        
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(255, 107, 0, 0.2);
+        }
+        
+        .card h2 {
+            color: #ff6b00;
+            margin-bottom: 15px;
+            font-size: 1.8em;
+        }
+        
+        .image-placeholder {
+            width: 100%;
+            height: 250px;
+            background: linear-gradient(45deg, #1e2a3a, #0f1a2b);
+            border-radius: 15px;
+            margin: 15px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px dashed #ff6b00;
+            color: #8ab4f8;
+            font-size: 1.1em;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .card p {
+            margin: 10px 0;
+            font-size: 1.1em;
+        }
+        
+        .card p b {
+            color: #8ab4f8;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 50px;
+            border-top: 2px solid #ff6b00;
+            color: #8ab4f8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🚀 ЭНЦИКЛОПЕДИЯ РАКЕТ 🚀</h1>
+            <div class="subtitle">От первых ступеней до дальних планет</div>
+        </header>
+
+        <div class="author-info">
+            <div class="info-item"><span>Студент:</span> <span>Малышкина Дарья Олеговна</span></div>
+            <div class="info-item"><span>Группа:</span> <span>283</span></div>
+            <div class="info-item"><span>Дата:</span> <span>2026</span></div>
+            <div class="info-item"><span>Тема:</span> <span>Ракеты</span></div>
+        </div>
+
+        <h2 class="gallery-title">🚀 Основные модели (ветка main)</h2>
+        
+        <div class="rocket-grid">
+
+            <div class="card">
+                <h2>Союз-2.1</h2>
+                <div class="image-placeholder">
+                    <img width=100px src="img/soyuz.jpg">
+                </div>
+                <p><b>Страна:</b> Россия</p>
+                <p><b>Первый пуск:</b> 2004</p>
+                <p><b>Назначение:</b> Доставка грузов на МКС</p>
+            </div>
+
+            <div class="card">
+                <h2>Falcon 9</h2>
+                <div class="image-placeholder">
+                    <img width=100px src="img/falcon9.jpg">
+                </div>
+                <p><b>Страна:</b> США</p>
+                <p><b>Первый пуск:</b> 2010</p>
+                <p><b>Назначение:</b> Многоразовые запуски</p>
+            </div>
+
+            <div class="card">
+                <h2>Протон-М</h2>
+                <div class="image-placeholder">
+                    <img width=100px src="img/proton.jpg">
+                </div>
+                <p><b>Страна:</b> Россия</p>
+                <p><b>Первый пуск:</b> 2001</p>
+                <p><b>Назначение:</b> Тяжелые грузы</p>
+            </div>
+        </div>
+
+<h2>Falcon Heavy</h2>
+<img width=350px src="img/falcon-heavy.jpg">
+<p><b>Статус:</b> Активна, частично многоразовая</p>
+<p><b>Производитель:</b> SpaceX</p>
+<p><b>Первый запуск:</b> 6 февраля 2018 года</p>
+<p><b>Грузоподъемность:</b> 63.8 тонны на НОО</p>
+<br>
+
+        <footer>
+            <p>© 2026 Малышкина Д.О. | Энциклопедия ракет | Все выше к звездам!</p>
+            <p style="font-size: 0.9em; margin-top: 10px;">⚡ Лабораторная работа по Git и GitHub ⚡</p>
+        </footer>
+    </div>
+</body>
+</html>
